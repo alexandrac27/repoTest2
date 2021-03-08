@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L8-Ex1</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        #flex{
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #div1{
+            background-color: turquoise;
+            flex-grow: 0.15;
+        }
+        #div2{
+            background-color: red;
+            flex-grow: 0.15;
+        }
+        #div3{
+            background-color: purple;
+            flex-grow: 0.15;
+        }
+
+        @media (max-width: 768px) {
+            #flex{
+                flex-direction: column;
+            }
+             
+
+            #div1{
+                background-color: violet;
+            }
+
+            #div2{
+                background-color: black;
+            }
+
+            #div3{
+                background-color: greenyellow;
+            }
+        }
+             
+         
+    </style>
+</head>
+<body>
+    <div id="flex">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+    
+</body>
+</html>

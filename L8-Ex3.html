@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H6-FlexBox</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        
+        #navbar {
+            width: 100vw; 
+            height: 10vh;
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        #links {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        li{
+            height: 100%;
+            margin-right: 1.5vh;
+            padding: 0 10px 0 10px;
+            display: flex;
+            align-items: center; 
+             
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+             
+        }
+
+        li:hover{
+            background-color: #0174DF;
+        }
+
+        @media (max-width:768px) {
+            #navbar{
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 100vh;
+                width: 30vw;
+            }
+
+            #links{
+                width: 100%;
+                justify-content: flex-start;
+                justify-content: center;
+                height: 40%;
+                flex-direction: column;
+            }
+
+            li{
+                width: 100%;
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+            <ul id="links">
+                <li><a href="#" id="home" class="navlink">Home</a></li>
+                <li><a href="#" id="about" class="navlink">About</a></li>
+                <li><a href="#" id="products" class="navlink">Products</a></li>
+                <li><a href="#" id="contact" class="navlink">Contact</a></li>
+
+            </ul>
+
+       
+    </div>
+     
+    
+</body>
+</html>

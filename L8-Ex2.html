@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L8-Ex2</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        #flex{
+            display: flex;
+            width: 100vw;
+            height: 40vh;
+        }
+
+        #sidebar{
+            background-color: lightgoldenrodyellow;
+            flex-grow: 0.2;
+        }
+
+        #main{
+            background-color: lightseagreen;
+            flex-grow: 0.8;
+        }
+
+        p{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        @media (max-width:768px) {
+            #flex{
+                height: 80vh;
+                flex-direction: column;
+            }
+
+            #sidebar, #main {
+                flex-grow: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="flex">
+        <div id="sidebar"><p>Sidebar</p></div>
+        <div id="main"><p>Main</p></div>
+    </div>
+    
+</body>
+</html>
